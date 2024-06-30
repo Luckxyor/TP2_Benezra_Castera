@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="habitaciones.html">Habitaciones</a></li>
+                    <li><a href="ubicacion.html">Ubicación</a></li>
+                    <li><a href="reserva.html">Reservas</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <img src="images/Logo.png">
+        </div>
+        <img src="images/Hotel banner.jpg" alt="Banner">
+    </header>
+    <main>
+        <div class="reservas">
+            <section>
+                <h1>Reservas</h1>
+                <h3>Completa el siguiente formulario para reservar</h3>
+            </section>
+            <div class="Formulario">
+                <form method="post" action="gracias.html">
+                    <div>
+                        <p>Fecha de ingreso:</p>
+                        <input type="date" required/>
+                    </div>
+                    <div> 
+                        <p>Fecha de salida:</p>
+                        <input type="date" required/>
+                    </div>
+                    <div>
+                        <p>
+                            Numero de personas:
+                            <select name="nroPersonas" required>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>+3</option>
+                            </select>
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            Tipo de habitación:
+                            <select name="tipHabitacion" required>
+                                <option>Standard</option>
+                                <option>Superior</option>
+                                <option>Premium</option>
+                            </select>
+                        </p>
+                    </div>
+                    <p><input type="submit" value="Enviar Datos"></p>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <p>&copy; Copyright 2024. Todos los derechos reservados. Hecho por Matias Castera y Lucas Benezra.</p>
+        </div>
+    </footer>
+</body>
+</html>
